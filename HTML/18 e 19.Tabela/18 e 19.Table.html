@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+</head>
+    <h1>Produtos</h1>
+    
+<body>
+    
+    <table border="4" width="100%"> <!--largura ocupa 100% da pagina-->
+        <tr>  <!--tr = table row = linha da tabela-->
+            <th>Código</th>  <!--th = table header = cabeçalho da tabela-->
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+
+        <tr>
+            <td>001</td> <!--td = table data = dados da tabela-->
+            <td>Notebook</td>
+            <td>R$ 2.500,99</td>
+        </tr>
+
+        <tr>
+            <td>002</td>
+            <td>Mouse</td>
+            <td>R$120,00</td>
+        </tr>
+
+        <tr>
+            <td>003</td>
+            <td>Monitor Zinnea Delfos24</td>
+            <td>R$599,00</td>
+        </tr>
+        
+        <tr>
+            <td>004</td>
+            <td>RX 580 8GB</td>
+            <td>R$311,00</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Desconto</td> <!--rowspan = aumenta o espaço da linha, "Desconto" ocupa 2 espaços agora-->
+            <td colspan="2">cupom1 - R$10,00</td> <!--colspan = aumenta o espaço da coluna, "cupom1", ocupa 2 espaços agora-->
+        </tr>
+        <tr>
+            <td colspan="2">cupom2 - R$12,00</td>
+        </tr>
+
+        <tr>
+            <td>Total:</td>
+            <td colspan="2">R$3.508,99</td>
+        </tr>
+    </table>
+
+</body>
+</html>
