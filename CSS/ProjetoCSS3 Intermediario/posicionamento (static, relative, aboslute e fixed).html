@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos (static, relative, absolute e fixed)</title>
+
+<!--relative: alinhamento baseado na posicao inicial do elemento
+
+    absolute: permite definir uma caixa que é removida no fluxo do documento e conseguimos alinhar baseada no container que tenha uma posicao
+    
+    fixed: alinhado baseado na tela/janela do navegador   -->
+
+
+    <style>
+
+        body {
+            background: #007fc7;
+        }
+
+
+
+        #container {
+            background: #FFF;
+            width: 800px;
+            margin: 10px auto; /* norte e sul = 10 \ leste e oeste = auto(sempre fica centralizado)*/
+            padding: 10px;
+            position: relative; /* elemento P3 é posicionado em relaçao ao seu container, isso se o container for position relative, caso nao for, o elemento P3 é baseado no body, se for baseado no body, o texto irá ficar saindo para fora quando diminuimos a pagina
+            normalmente os elementos vem como posicao static, é sempre preciso trocar nesses casos*/
+        }
+
+        h1 {
+            position: static; /* static é o posicionamento padrão dos elementos */
+
+        }
+
+        p {
+            position: static;
+            width: 300px; 
+        }
+
+        .absolute {
+            position: absolute; /* é calculada baseada no container que esta o elemento, se o container tiver uma posicao relativa */
+            border: 1px solid red;
+            top: 0px;
+            left: 500px;
+        }
+
+        .fixed { /* acompanha a rolagem do site */
+            position: fixed;
+            border: 1px solid red;
+            background: #f2f2f2;
+            margin: 0px;
+            bottom: 0px;
+            right: 0px
+        }
+
+
+        .relative {
+            border: 1px solid red;
+            position: relative; /* para utilizar o relative, precisamos utilizar propriedades de deslocamento para movimentar algo, sendo eles, top, right, bottom, left  */
+            top: -20px; /*  lado que vai ser empurrado */
+            left: 80px;
+        }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <div id="container">
+        
+        <h1>Posicionamentos</h1>
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p>
+
+        <p class="relative">
+            P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p>
+
+        <p class="absolute">
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p>
+
+        <p class="fixed">
+            P4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+         
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+         
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+         
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+         
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+         
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+         
+
+        <p>
+            P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam, possimus voluptates officiis totam illum? Reiciendis molestias iusto, soluta blanditiis asperiores consequuntur fuga, animi possimus, neque corrupti assumenda excepturi repudiandae.
+        </p> 
+         
+
+
+
+
+    </div>
+
+
+</body>
+</html>

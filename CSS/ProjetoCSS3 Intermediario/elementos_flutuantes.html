@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flutuantes</title>
+
+    <style type="text/css">
+
+        #principal {
+            border: 5px solid red;
+            background: green;
+        }
+
+
+        .conteudo1{
+            background: blue;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            float: right;
+        
+        
+
+        }
+
+        /*.conteudo2{
+            background: red;
+            border: 3px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            float: left; /* elementos flutuantes  
+
+        }*/
+        .conteudo-zero {
+            background: red;
+            border: 3px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+         
+
+        }
+
+        .clear {
+            clear: left
+            /*serve para limpar os conteudos flutuantes, no caso tinha o float left nos conteudos.
+            sem  o clear, o lorem iria aparecer do lado dos conteudos, com o clear, ele aparece abaixo */
+        }
+
+
+
+
+
+
+    </style>
+<!--No conteudo1 esta o fluxo de documento(normal), quando utilizamos o float no conteudo2, ele vai pra outro fluxo e é como se ele nao estivesse no fluxo normal, pro conteudo1 é como se o conteudo2 nao existisse-->
+
+<!--Quando os 3 conteudos1 estao no float, eles vao disputar pelo espaço, quando um conteudo nao está no float, ele nao vai lugar pros outros que estão-->
+
+
+</head>
+<body>
+    
+    <div id="principal">
+
+        <div class="conteudo1">
+            Conteudo 1
+        </div>
+        <div class="conteudo1">
+            Conteudo 2
+        </div>
+        <div class="conteudo1">
+            Conteudo 3
+        </div>
+    
+
+        <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas veniam voluptates officia enim vero facere, quisquam quis ab dolor totam in adipisci placeat cumque? Ratione quos libero voluptatum inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis excepturi laudantium sunt, necessitatibus quaerat id unde corrupti ipsum minima placeat voluptatibus eaque rerum facilis? Ducimus asperiores odit totam esse autem.
+        </p>
+    </div>
+</body>
+</html>

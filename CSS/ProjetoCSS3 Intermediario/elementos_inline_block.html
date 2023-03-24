@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos inline, block e inline-block</title>
+</head>
+
+    <title>Elementos inline, block e inline-block</title>
+
+    <style type="text/css">
+
+        .borda {
+            border: 1px solid red;
+            /* display: inline;  forma de deixar o elemento block para inline */
+            /* display: block; forma de deixar o elemento inline para block*/
+            /* display: inline-block; só vai quebrar a linha se o elemento for muito grande */
+        }
+
+    </style>
+
+
+<body>
+    
+    <h1 class="borda">Bloco 1</h1> <!--exemplo de um elemento block-->
+    <h1 class="borda">Bloco 2</h1>
+
+    <div class="borda">Bloco 3</div> <!--outro elemento block-->
+    <div class="borda">Bloco 4</div>
+<br><br>
+
+                                                          
+    <span class="borda">Inline 1</span> <!--exemplo de um elemento inline-->
+    <span class="borda">Inline 2</span>
+<br><br>
+
+    <span class="borda">Inline 3</span> <!-- se definir como inline-block nao vai acontecer nada, pois tem pouco elemento(texto) dentro da caixa-->
+    <span class="borda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, id voluptates! Distinctio eos et vel quod. Illum officiis delectus nihil voluptates suscipit necessitatibus laudantium blanditiis labore id! Minima, animi nobis?</span> <!--nesse caso é um span, não deveria quebrar a linha, mas se definir o display como inline-block, ele vai quebrar pois tem muito texto dentro da caixa-->
+    
+
+</body>
+<footer>
+
+</footer>
+</html>
