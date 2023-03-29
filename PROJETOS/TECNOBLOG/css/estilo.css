@@ -8,5 +8,17 @@
 body {
     font-size: 1em;
     font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
-    background: gray
+    background: gray;
+}
+
+
+
+/*
+    ****Layout ****
+
+*/
+#area-cabecalho {
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;
 }

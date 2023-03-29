@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style type="text/css">
+
+       /*  *{  seletor universal, css aplicado em todos o site
+            border: 1px solid red;
+        } */
+
+        /* SELETOR DE FILHO:
+        li>a {  
+            css só vai funcionar no link dentro da lista, o <a> é filho direto do <li>
+           text-decoration: none;
+           color: red; 
+        } */
+
+        /* SELETOR DESCENDENTE: 
+        nesse caso o span entre a lista e o link também vai funcionar o css, pois ele é descendente, nao precisa mais ser filho direto*/
+        li a {
+            text-decoration: none;
+            color: red;
+        }
+        /*SELETOR DE IRMÃO ADJACENTE: 
+        nesse caso, só vai funcionar o css no 1° <p> depois do h1*/
+        h1+p {
+            color: blue;
+        }
+
+        /*SELETOR DE IRMAO GERAL:
+        nesse caso, o css vai funcionar pra todos os <p> depois do h1, não é só o adjacente do h1 
+        h1~p {
+            color: blue;
+        }   
+            */
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <ul>
+        <li>
+            <a href="">Seletor de filho</a> <!--link filho direto da lista-->
+        </li>
+        <li>
+            <span>
+                <a href="">Teste 1</a> <!--link nao é filho direto a lista-->
+            </span>
+        </li>
+    </ul>
+            <a href="">Teste 2</a>
+    <br><br><br><br>
+    <!--O css seletor de filho funcionou no 1° link, pois o link está dentro da lista, no teste 1 esta dentro do span e no teste 2 está fora da lista-->
+
+    <ul>
+        <li>
+            <a href="">Teste 1</a> 
+        </li>
+        <li>
+            <span>
+                <a href="">Seletor descendente</a>
+            </span>
+        </li>
+    </ul>
+            <a href="">Teste 2</a>
+
+    <br><br><br><br>
+
+
+    <div id="cabecalho">
+        <p>Parágrafo 0 da página</p>
+        <h1>Titulo da pagina</h1>
+        <p>Parágrafo 1 da página</p>
+        <p>Parágrafo 2 da página</p>
+    </div>
+
+
+
+
+
+</body>
+</html>

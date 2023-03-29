@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança e especificidade</title>
+
+    <style type="text/css">
+
+        /*body {
+            color: red;
+        }/*/
+
+        /*
+        .pagina p {
+            color:red !important;
+            /* caso tenha propriedade com o important será mais importante que o ultimo, nao deve ser utilizado com frequencia 
+        }
+
+        .pagina p { /*mesmo com a mesma propriedade, sempre o ultimo é q vai valer, logos os paragrafo vao ficar azul 
+            color: blue;
+        }
+        */
+
+
+        /* ORDEM DE PRECEDÊNCIA */
+        * {
+            color: red; /*mesmo o seletor universal aplicando vermelho em todos os elementos, o seletor especifico tem prioridade, logo o h2 fica azul. */
+        }
+
+        h2 {
+            color: blue; /* seletor especifico */
+        }
+
+        h2.verde { /*seletor mais especifico ainda, possui a maior prioridade, ficando verde  */
+            color: green;
+        }
+
+        h2#amarelo { /*seletor mais especifico de todos, id é mais especifico que class */
+        color: yellow;
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <div>
+
+        <h2>
+            Lorem ipsum dolor, sit amet consectetur
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reprehenderit ratione facilis ipsa eaque commodi! Quaerat ut magnam eius voluptatem non esse? Sint a accusantium voluptate itaque culpa alias magni!
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio eos ad iure veritatis similique beatae perspiciatis aspernatur repellat sapiente commodi alias quis, doloremque numquam fuga. Atque vero minus rem corporis.
+        </p>
+    </div>
+    <br><br>
+    <div id="pagina">
+        <h2 class="verde" id="amarelo">Especificidade</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sequi ratione fuga quidem voluptate repellendus deserunt eius necessitatibus doloribus soluta nobis eum harum exercitationem consequuntur rem, quod aliquam excepturi saepe!
+        </p>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ullam aliquam. Assumenda, delectus. Aut animi libero inventore, aliquam suscipit officiis porro corrupti odio a nostrum temporibus ab dignissimos amet quia.
+        </p>
+
+    </div>
+
+
+
+
+</body>
+</html>
