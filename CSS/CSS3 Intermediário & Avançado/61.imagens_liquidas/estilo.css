@@ -1,0 +1,79 @@
+                                                                body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container {
+    border: 1px solid red;
+    width: 85%;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 720px;
+    max-width: 960px;
+}
+
+#conteudo {
+    width: 75%;
+    float: right;
+}
+
+#conteudo-principal {
+    width: 64%;
+    float: left;
+    border: 1px solid red;
+
+}
+
+#conteudo-secundario {
+    width: 34%;
+    float: right;
+    background: #d1d1d1;
+
+}
+
+/*
+#imagem {
+    width: 90%;
+    overflow: hidden; /*quando uma imagem é maior que a div pode usar essa comando para esconder o excesso 
+    border: 1px solid red;
+} */
+
+img.img-noticia {
+    width: 94%;
+    padding: 2%;
+    border: 1px solid red;
+    max-width: 600px;
+}
+
+
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#marca {
+    width: 100%;
+    height: 200px;
+    background: #9E9E9E url(imagens/cabecalho.jpg) no-repeat center;
+    text-align: center;
+    line-height: 200px;
+    ;
+}
+
+#navegacao {
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#rodape {
+    clear: both; /*como o navegação e conteudo estão flutuando, o clear serve pra limpar */
+    background: #c4c4c4;
+    padding: 5px;
+}
