@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF/Else com Operadores Lógicos</title>
+    <script>
+        //TESTE LOGICO: E
+        document.write("TESTE E(&&): <br>")
+        if (2 == 2 && 3 >= 1) {
+            document.write("Verdadeiro")
+        } else {
+
+        }
+        //TESTE LOGICO: OU
+        document.write("<hr />")
+        document.write("TESTE OU(||): <br>")
+        //    vdd /    vdd /     falso 
+        if (2 == 2 || 3 >= 1 || "a" == "b") {
+            document.write("Verdadeiro")
+        } else {
+            document.write("Falso")
+            document.write("<hr />")
+        }
+        //TESTE LOGICO: NOT
+        document.write("<br> <hr/>")
+        document.write("TESTE NOT(!):<br>")
+        if (!(5 >= 2)) { //mesmo sendo verdade irá ser invertido o resultado
+            document.write("Verdadeiro")
+        } else {
+            document.write ("Falso <hr />")
+        }
+
+
+        ////PROGRAMA NOTA DO ALUNO /////////////
+        document.write("<br> PROGRAMA NOTA DO ALUNO:<br><br>")
+        var nota = prompt("Digite sua nota:  ")
+        var faltas = prompt("Digite a quantidade de faltas: ")
+        var media = 7
+        var faltas_maximas = 15
+      
+         if (nota >= media && faltas <= faltas_maximas) {
+            document.write("Você foi APROVADO!")
+        } else {
+            document.write("Você foi REPROVADO!")
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

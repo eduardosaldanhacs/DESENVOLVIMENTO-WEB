@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casting</title>
+</head>
+    <script>
+
+        var variavel1 = prompt("Digite algum número:")
+        var variavel2 = prompt("Digite o outro número:")
+
+        //Sem o partInt ira acontecer a concatenacao dos valores: ex 10+20 = 1020
+        //O browser trás valores do tipo string, é preciso definir o seu tipo
+        
+        variavel1 = parseInt(variavel1) //Essa função retorna o dado do tipo numérico
+        variavel2 = parseInt(variavel2)
+        //variavel2 = parseFloat(variavel2)
+
+        document.write(variavel1 + variavel2)
+        document.write("<br>")
+
+        var variavel3 = 10
+        var variavel4 = 20 
+        //Tipo numérico para tipo string
+        document.write(variavel1.toString() + variavel2.toString())
+
+    </script>
+
+<body>
+    
+</body>
+</html>
