@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Janela Mouse</title>
+    <script src="script.js"></script>
+    <style type="text/css">
+        #container {
+            height: 3000px;
+            width: 125px;
+            background: #ccc;
+        }
+
+
+
+    </style>
+</head>
+<body onresize="console.log('onresize disparado')" onscroll="console.log('onscroll disparado2')"> <!--onresive é especifico do body-->
+    <div id="container">
+
+    </div>
+
+    <!--
+        Onresize = Acionado quando a pagina é redimensionada, o elemento que sofre a alteração na janela é o body
+        Onscroll = Acionado quandoa pagina é rolada
+
+
+        
+    -->
+    
+</body>
+</html>

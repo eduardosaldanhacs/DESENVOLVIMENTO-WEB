@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Janela</title>
+</head>
+<body>
+    <input type="text" onfocus="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')"> <!--ao clicar fora ou dentro da região o estado é modificado-->
+    
+    <!--onfocus = Acionado quando o elemento recebe o foco do cursor do mouse
+        onblur = Acionado quando o elemento perde o foco
+        onchange = Acionado quando o estado do elemento é modificado
+    -->
+    <select onchange="console.log('Estado foi modificado')">
+        <option>--Selecione--</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select> <!--sempre que uma opçao foi trocada o estado é modificado-->
+
+</body>
+</html>

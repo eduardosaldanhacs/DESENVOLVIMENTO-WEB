@@ -4,11 +4,13 @@ var N2 = (prompt("Digite um segundo numero:"))
 
 N1 = (parseInt(N1))
 N2 = (parseInt(N2))
+
+var calculo = 0
 function fazerCalculo(N1, N2, opcao) {
     if (opcao == "soma") {
-       var calculo = N1 + N2
+      calculo = N1 + N2
     } if (opcao == "subtração") { 
-       var calculo = N1 - N2 
+      calculo = N1 - N2 
         }
      return calculo 
     }
